@@ -49,7 +49,7 @@ type ChannelPipeline interface {
 
 type ChannelFuture interface {
 	Future[ChannelFuture]
-	Channel() *Channel
+	Channel() Channel
 }
 
 type channelInitializer struct {
