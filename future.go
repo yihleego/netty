@@ -6,4 +6,6 @@ type Future[T any] interface {
 	// Async nonblock waits for this listener
 	Async(func(T))
 	Cancel() error
+	IsSuccess() bool
+	IsCancellable() bool
 }
